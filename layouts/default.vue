@@ -1,19 +1,17 @@
 <template>
   <div>
     <header class="header">
-    <nav>
-      <NuxtLink class="header__logo" to="/">The Weather App</NuxtLink>
-    </nav>
+      <nav>
+        <NuxtLink class="header__logo" to="/">The Weather App</NuxtLink>
+      </nav>
     </header>
     <div>
       <slot />
     </div>
-
-    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +23,4 @@
     text-decoration: none;
   }
 }
-
-
 </style>
