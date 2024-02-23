@@ -11,6 +11,7 @@ This is a weather widget that displays the current weather in a city. The user c
 - Clone the repository: `git clone git@github.com:vldslw/weatherapp.git`
 - Navigate into the directory: `cd weatherapp`
 - Install the dependencies: `npm install`
+- add .env file with your own OpenWeatherMap API key in the root of the project or use the provided .env.example file
 - Start the application: `npm run dev`
 
 The client will start on port 3000: `http://localhost:3000/`.
