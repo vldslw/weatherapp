@@ -35,7 +35,7 @@ const isLoading = ref(true);
 const currentWeatherData = ref(null);
 const weatherForecastData = ref(null);
 
-const apiSecret = '78944caa0320d81e58634fc3895452b7';
+const apiSecret = useRuntimeConfig().public.apiSecret;
 
 const getCurrentWeatherData = async () => {
   try {
