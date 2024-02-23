@@ -1,9 +1,8 @@
 # The Weather App
 
-### Weather widget made with Nuxt 3 
+### Weather widget made with Nuxt 3
 
-This is a weather widget that displays the current weather in a city. The user can search for a city and view the current weather in that city as well as the weather forecast for the next 3 days with 3-hour intervals. The widget displays the temperature, the weather icon, the wind speed, and the humidity for the current weather and the weather icon, the maximum and the minimum temperature for the forecast. The widget uses the OpenWeatherMap API to fetch the weather data. 
-
+This is a weather widget that displays the current weather in a city. The user can search for a city and view the current weather in that city as well as the weather forecast for the next 3 days with 3-hour intervals. The widget displays the temperature, the weather icon, the wind speed, and the humidity for the current weather and the weather icon, the maximum and the minimum temperature for the forecast. The widget uses the OpenWeatherMap API to fetch the weather data.
 
 ### Installing and running the application
 
