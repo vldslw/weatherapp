@@ -27,4 +27,9 @@
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .header {
+    justify-content: center;
+  }
+}
 </style>

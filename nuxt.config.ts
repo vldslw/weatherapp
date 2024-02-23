@@ -2,12 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    ['@nuxtjs/google-fonts',
-    {
-      families: {
-        Roboto: [400, 700],
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Roboto: [400, 700],
+        },
       },
-    },
-  ]],
-  css: ['~/assets/css/global.scss']
+    ],
+  ],
+  css: ['~/assets/css/global.scss'],
 });

@@ -7,9 +7,11 @@
       type="text"
       placeholder="Search for a location"
     />
+    <p class="search__error" v-if="searchError">An error occured, please try later</p>
     <ul class="search__list" v-if="searchResults">
-      <p v-if="searchError">An error occured, please try later</p>
-      <p v-if="searchResults.length === 0">No results found, please try a different search word</p>
+      <p class="search__noresults" v-if="searchResults.length === 0">
+        No results found, please try a different search word
+      </p>
       <li class="search__item" v-for="searchResult in searchResults" @click="viewCity(searchResult)">
         {{ searchResult.name }}{{ searchResult.state ? ', ' + searchResult.state : '' }}, {{ searchResult.country }}
       </li>
@@ -52,8 +54,8 @@ const getSearchResults = () => {
           `http://api.openweathermap.org/geo/1.0/direct?q=${searchQuery.value}&limit=5&appid=${apiSecret}`,
         );
         searchResults.value = result.data;
-        console.log(searchResults.value);
       } catch (error) {
+        console.log(error);
         searchError.value = true;
       }
       return;
@@ -90,6 +92,15 @@ const getSearchResults = () => {
       font-weight: 700;
       transition: font-weight 0.3s;
     }
+  }
+  &__error {
+    padding: 10px;
+    margin: 0;
+    color: dimgray;
+  }
+  &__noresults {
+    margin: 0;
+    color: dimgray;
   }
 }
 </style>

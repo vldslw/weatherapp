@@ -42,7 +42,7 @@ const props = defineProps({
   @media screen and (max-width: 360px) {
     &__temperature {
       font-size: 32px;
-  }
+    }
   }
   &__icon {
     width: 100px;
@@ -51,8 +51,8 @@ const props = defineProps({
   @media screen and (max-width: 360px) {
     &__icon {
       width: 50px;
-    height: 50px;
-  }
+      height: 50px;
+    }
   }
   &__desc {
     text-align: start;
@@ -60,17 +60,16 @@ const props = defineProps({
   @media screen and (max-width: 360px) {
     &__desc {
       text-align: center;
-  }
+    }
   }
   &__desc-param {
     margin: 0;
   }
-  
 }
 
 @media screen and (max-width: 470px) {
   .current {
-  flex-direction: column;
+    flex-direction: column;
   }
 }
 </style>

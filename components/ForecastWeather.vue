@@ -62,7 +62,7 @@ const threeDaysForecast = computed(() => {
   @media screen and (max-width: 470px) {
     &__item {
       grid-template-columns: 1fr;
-  }
+    }
   }
   &__period {
     display: flex;
