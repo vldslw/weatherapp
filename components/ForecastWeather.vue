@@ -65,7 +65,7 @@ const threeDaysForecast = computed(() => {
   }
   &__date {
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
   }
   &__time {
     color: grey;
@@ -79,12 +79,10 @@ const threeDaysForecast = computed(() => {
   &__max-temperature {
     margin: 0;
     font-size: 32px;
-    font-weight: 500;
   }
   &__min-temperature {
     margin: 0;
     font-size: 18px;
-    font-weight: 500;
     color: grey;
   }
   &__icon {

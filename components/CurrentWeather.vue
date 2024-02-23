@@ -37,7 +37,6 @@ const props = defineProps({
   &__temperature {
     margin: 20px;
     font-size: 48px;
-    font-weight: 500;
   }
   &__icon {
     width: 100px;

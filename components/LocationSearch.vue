@@ -76,7 +76,7 @@ const getSearchResults = () => {
   &__list {
     position: absolute;
     width: 100%;
-    top: 130px;
+    top: 143px;
     padding: 10px;
     margin: 0;
   }

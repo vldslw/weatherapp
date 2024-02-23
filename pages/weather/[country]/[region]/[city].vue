@@ -63,10 +63,10 @@ console.log(weatherForecastData);
   align-items: center;
   &__heading {
     font-size: 16px;
-    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     color: dimgray;
+    font-weight: 400;
   }
   &__period {
     display: flex;
@@ -75,7 +75,7 @@ console.log(weatherForecastData);
   }
   &__date {
     margin: 0 10px 0 0;
-    font-weight: 600;
+    font-weight: 700;
   }
   &__time {
     margin: 0;
