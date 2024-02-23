@@ -17,10 +17,14 @@
   justify-content: space-between;
   padding: 20px 40px;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 700;
   &__logo {
     color: black;
     text-decoration: none;
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
   }
 }
 </style>

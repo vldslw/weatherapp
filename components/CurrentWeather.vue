@@ -8,9 +8,9 @@
         alt="Weather icon"
       />
     </div>
-    <div class="current__description">
-      <p class="current__humidity">Humidity: {{ currentWeatherData.main.humidity }}%</p>
-      <p class="current__wind">Wind: {{ currentWeatherData.wind.speed }} meter/sec</p>
+    <div class="current__desc">
+      <p class="current__desc-param">Humidity: {{ currentWeatherData.main.humidity }}%</p>
+      <p class="current__desc-param">Wind: {{ currentWeatherData.wind.speed }} meter/sec</p>
     </div>
   </div>
 </template>
@@ -25,6 +25,7 @@ const props = defineProps({
 .current {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid grey;
   border-radius: 10px;
   width: 100%;
@@ -35,15 +36,41 @@ const props = defineProps({
     justify-content: space-between;
   }
   &__temperature {
-    margin: 20px;
+    margin: auto 0;
     font-size: 48px;
+  }
+  @media screen and (max-width: 360px) {
+    &__temperature {
+      font-size: 32px;
+  }
   }
   &__icon {
     width: 100px;
     height: 100px;
   }
-  &__description {
+  @media screen and (max-width: 360px) {
+    &__icon {
+      width: 50px;
+    height: 50px;
+  }
+  }
+  &__desc {
     text-align: start;
+  }
+  @media screen and (max-width: 360px) {
+    &__desc {
+      text-align: center;
+  }
+  }
+  &__desc-param {
+    margin: 0;
+  }
+  
+}
+
+@media screen and (max-width: 470px) {
+  .current {
+  flex-direction: column;
   }
 }
 </style>

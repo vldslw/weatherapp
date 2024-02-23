@@ -1,6 +1,6 @@
 <template>
   <div class="city">
-    <h2 class="city__heading">Current weather in {{ city }}, {{ country }}</h2>
+    <h2 class="city__heading">Current weather in <span class="city__heading-highlight">{{ city }}, {{ country }}</span></h2>
     <div class="city__period">
       <p class="city__date">
         {{
@@ -57,7 +57,7 @@ console.log(weatherForecastData);
 
 <style lang="scss" scoped>
 .city {
-  padding: 20px 40px;
+  padding: 20px 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,6 +67,10 @@ console.log(weatherForecastData);
     text-align: center;
     color: dimgray;
     font-weight: 400;
+  }
+  &__heading-highlight {
+    font-weight: 700;
+    color: black;
   }
   &__period {
     display: flex;
@@ -79,6 +83,18 @@ console.log(weatherForecastData);
   }
   &__time {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .city {
+  padding: 20px 180px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .city {
+  padding: 20px 40px;
   }
 }
 </style>

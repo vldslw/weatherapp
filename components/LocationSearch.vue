@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="search">
     <input
       v-model="searchQuery"
       @input="getSearchResults"
@@ -65,9 +65,11 @@ const getSearchResults = () => {
 
 <style lang="scss" scoped>
 .search {
+  position: relative;
   &__input {
     padding: 10px;
     width: 100%;
+    box-sizing: border-box;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
@@ -76,13 +78,18 @@ const getSearchResults = () => {
   &__list {
     position: absolute;
     width: 100%;
-    top: 143px;
+    box-sizing: border-box;
+    top: 36px;
     padding: 10px;
     margin: 0;
   }
   &__item {
     cursor: pointer;
     list-style: none;
+    &:hover {
+      font-weight: 700;
+      transition: font-weight 0.3s;
+    }
   }
 }
 </style>
