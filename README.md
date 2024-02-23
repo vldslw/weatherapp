@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+# The Weather App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### Weather widget made with Nuxt 3 
 
-## Setup
+This is a weather widget that displays the current weather in a city. The user can search for a city and view the current weather in that city as well as the weather forecast for the next 3 days with 3-hour intervals. The widget displays the temperature, the weather icon, the wind speed, and the humidity for the current weather and the weather icon, the maximum and the minimum temperature for the forecast. The widget uses the OpenWeatherMap API to fetch the weather data. 
 
-Make sure to install the dependencies:
 
-```bash
-# npm
-npm install
+### Installing and running the application
 
-# pnpm
-pnpm install
+- Go to the directory where you want to clone the repository
+- Clone the repository: `git clone git@github.com:vldslw/weatherapp.git`
+- Navigate into the directory: `cd weatherapp`
+- Install the dependencies: `npm install`
+- Start the application: `npm run dev`
 
-# yarn
-yarn install
+The client will start on port 3000: `http://localhost:3000/`.
 
-# bun
-bun install
-```
+## Author
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+**Vladislav Pavlov** - [vldslw](https://github.com/vldslw)
